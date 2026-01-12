@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Doomfall для MMMerge — модульный оверхаул (Сложность, Плотность и Боссы) — Might and Magic Merge</title>
+
+  <meta name="description" content="Doomfall — глубокий геймплейный оверхаул для Might and Magic Merge (MMMerge): полностью модульные системы Сложности, Плотности монстров и Боссов — от ванильного опыта до хаотичного эндгейма, стабильно и с поддержкой мультиплеера." />
+  <meta name="keywords" content="Doomfall, MMMerge, Might and Magic Merge, Might and Magic, MM6, MM7, MM8, Enroth, Antagarich, Jadame, mod, modular difficulty, monster density, dynamic bosses, extra bosses, Heroes of the Nexus, Extra Class Pack, Advanced Classes" />
+  <link rel="canonical" href="https://mmmerge.github.io/doomfall/" />
+
+  <meta property="og:title" content="Doomfall для MMMerge — модульный оверхаул (Сложность, Плотность, Боссы)" />
+  <meta property="og:description" content="Модульный оверхаул для Might and Magic Merge (MMMerge), который разделяет Сложность, Плотность и Боссов на независимые системы — играй близко к ванили или безопасно выкручивай движок до хаотичных эндгейм-сражений, включая мультиплеер." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; margin: 0; background: #0b0d10; color: #e9eef6; }
+    a { color: #8cc8ff; }
+    a:hover { opacity: .9; }
+    header, main, footer { max-width: 980px; margin: 0 auto; padding: 18px; }
+    header { padding-top: 28px; }
+    .card { background: #121722; border: 1px solid #1f2a3a; border-radius: 14px; padding: 18px; margin: 14px 0; }
+    .tag { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #162033; border: 1px solid #243552; font-size: 12px; margin-right: 8px; }
+    h1 { font-size: 34px; margin: 0 0 6px 0; }
+    h2 { margin-top: 28px; }
+    h3 { margin-top: 18px; }
+    ul { padding-left: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+    .muted { color: #b8c4d6; }
+    .note { background: #0f1b2b; border: 1px solid #203857; padding: 12px 14px; border-radius: 12px; }
+    .btn {  display: inline-block;  padding: 10px 14px;  border-radius: 12px;  background: #1b2a44;  border: 1px solid #2a4370;  text-decoration: none;  margin: 6px 10px 6px 0; }
+    .btn:hover { background: #213356; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 12px; border: 1px solid #20304a; }
+    th, td { padding: 10px 10px; border-bottom: 1px solid #20304a; vertical-align: top; }
+    th { text-align: left; background: #121c2d; }
+    tr:last-child td { border-bottom: none; }
+    .img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #22314b; }
+    .k { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: #0e1522; border: 1px solid #21314b; padding: 2px 6px; border-radius: 8px; }
+    footer { padding-bottom: 30px; }
+  </style>
+</head>
+
+<body>
+<header>
+  <span class="tag">Doomfall</span>
+  <span class="tag">MMMerge</span>
+  <span class="tag">Модульная сложность</span>
+  <span class="tag">Боссы + Плотность</span>
+  <span class="tag">Готово для мультиплеера</span>
+
+  <h1>Doomfall для MMMerge (Might and Magic Merge)</h1>
+
+  <p class="muted">
+    Doomfall — это мой оверхаул «выбери свой апокалипсис» для <strong>Might and Magic Merge (MMMerge)</strong>.
+    Он не просто раздувает статы — он даёт тебе три чистых ползунка (<strong>Сложность</strong>, <strong>Плотность</strong>, <strong>Боссы</strong>),
+    чтобы ты мог оставить игру близкой к ванили… или выкрутить всё до полного эндгейм-хаоса, сохраняя логику карт и стабильность.
+  </p>
+
+  <div class="card">
+    <h2 style="margin-top:0;">Видео — демонстрация</h2>
+    <p class="muted">Вот презентационное видео Doomfall:</p>
+    <div style="position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid #21314b;background:#0b0d10;">
+      <iframe
+        src="https://www.youtube.com/embed/nPMMGFCjjEQ"
+        title="Doomfall для MMMerge — Showcase"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <p class="muted" style="margin-top:10px;">
+      Прямая ссылка:
+      <a href="https://youtu.be/nPMMGFCjjEQ?si=hwXd4aHbgcnSSvyX" target="_blank" rel="noopener">youtu.be/nPMMGFCjjEQ</a>
+    </p>
+  </div>
+
+  <div class="note">
+    <p style="margin:0;">
+      Внутри Doomfall уже есть модуль <strong>Extra Class Pack / Advanced Classes</strong>, так что ты получаешь полный сетап без «пирамиды» из десятка отдельных установок.
+    </p>
+  </div>
+</header>
+
+<main>
+  <section class="card" id="doomfall">
+    <h2 style="margin-top:0;">Doomfall — модульный геймплейный оверхаул для MMMerge (Might and Magic Merge)</h2>
+
+    <p class="muted">
+      Doomfall — это тот мод, который ставишь, когда любишь <strong>Might and Magic Merge (MMMerge)</strong>,
+      но хочешь, чтобы игра могла «согнуться чуть дальше», не ломаясь. Это глубокий оверхаул, который
+      выводит движок за рамки его «обычной зоны комфорта»… но при этом позволяет новичкам играть в спокойный ванильный ран,
+      потому что все настройки — полностью модульные.
+    </p>
+
+    <div class="note">
+      <p style="margin:0;">
+        Doomfall — это не патч «+50% HP монстрам». Он меняет <strong>то, как в рантайме генерируется челлендж</strong> в MMMerge,
+        чтобы ты мог настроить опыт от лёгкого исследования до эндгейм-хаоса — без поломки темпа карт и длинных кампаний.
+      </p>
+    </div>
+
+    <h3>Часть Heroes of the Nexus (и включает Extra Class Pack)</h3>
+    <p>
+      Doomfall — это <strong>вторая глава</strong> проекта <strong>Heroes of the Nexus</strong>, и внутри уже встроен
+      <a href="https://www.nexusmods.com/mightandmagicviii/mods/20" target="_blank" rel="noopener"><strong>Extra Class Pack</strong></a>.
+      На практике это значит, что тебе не нужно жонглировать десятью разными загрузками, чтобы получить «полный опыт».
+    </p>
+
+    <h3>Быстрая установка</h3>
+    <ol>
+      <li>Установи <strong>Might and Magic 8</strong>.</li>
+      <li>
+        Скачай базовый <strong>MMMerge</strong>:
+        <a class="btn" href="https://1drv.ms/u/s!AklOx6zaOmQgbHB1-Avia15ruaI?e=H4IcBJ" target="_blank" rel="noopener">Скачать MMMerge</a>
+      </li>
+      <li>
+        Скачай <strong>Doomfall</strong> на Nexus:
+        <a class="btn" href="https://www.nexusmods.com/mightandmagicviii/mods/23" target="_blank" rel="noopener">Скачать Doomfall</a>
+      </li>
+      <li>Скачать русский язык <a class="btn" href="https://drive.google.com/file/d/1aPbTPqvrpZqxAurNaXuoyPeARhTpuLXt/view?usp=sharing" target="_blank" rel="noopener">Скачать патч русского языка</a></li>
+    </ol>
+
+    <p class="muted">
+      Doomfall уже включает: <strong>Extra Class Pack</strong>, патчи MMMerge, совместимость с мультиплеером и полный набор персонажей.
+    </p>
+
+    <p>Discord: <a href="https://discord.gg/hcD4b9yXdj" target="_blank" rel="noopener">discord.gg/hcD4b9yXdj</a></p>
+
+    <p>Если тебе нравится мод, угости разработчика чашечкой кофе: <a href="https://www.patreon.com/c/mightmagicmergedoomfallmod/membership" target="_blank" rel="noopener">Угостить кофе ☕</a></p>
+
+    <h3>Под любой стиль игры (серьёзно)</h3>
+    <p>
+      Самое точное описание Doomfall как игрока: он никогда не говорит тебе «играй только так».
+      Он даёт набор инструментов, и <strong>ты</strong> решаешь, какой ран тебе нужен.
+    </p>
+
+    <ul>
+      <li>Хочешь <strong>ванильную сложность</strong>, но больше монстров на картах? <strong>Пожалуйста.</strong></li>
+      <li>Хочешь всё ванильно, но добавить <strong>новых уникальных боссов</strong> местами? <strong>Пожалуйста.</strong></li>
+      <li>Хочешь подкрутить <strong>боевую сложность</strong>, не трогая плотность? <strong>Можно.</strong></li>
+      <li>Хочешь ваниль и лишь редкие моменты «о нет, это босс»? <strong>Легко.</strong></li>
+    </ul>
+
+    <p class="note">
+      <strong>Ничего не обязательно.</strong> Doomfall не навязывает пресет — он позволяет собрать MMMerge именно так, как тебе нравится.
+    </p>
+
+    <h3>3 настройки Doomfall (независимые системы)</h3>
+    <p>
+      Doomfall разделяет сложность на <strong>три отдельные ручки</strong>, которые можно крутить независимо.
+      В этом и фишка: ты не заперт в логике «хардкор = всё поехало».
+    </p>
+
+    <figure style="margin: 14px 0;">
+      <img class="img" src="https://heroesofthenexus.com/assets/images/doomfall-3.png" alt="Настройки Doomfall: Сложность, Плотность, Боссы (MMMerge)" loading="lazy" />
+      <figcaption class="muted" style="margin-top:8px;">
+        Три ползунка: Сложность, Плотность, Боссы — каждый можно менять без влияния на остальные.
+      </figcaption>
+    </figure>
+
+    <div class="grid">
+      <div class="card">
+        <h4 style="margin:0 0 6px 0;">1) Сложность</h4>
+        <p>
+          Управляет <strong>общей интенсивностью боя</strong> в Might and Magic Merge:
+          насколько больно драки ощущаются, насколько опасны враги и какое давление ты чувствуешь.
+        </p>
+        <p class="muted">
+          Низкие пресеты (<em>Piece of Cake</em>, <em>Very Easy</em>, <em>Easy</em>) — идеальны, если ты новичок в MMMerge
+          или хочешь расслабленный ран. Высокие значения растут жёстко: враги сильнее бьют, живут дольше,
+          и бои превращаются в реальные испытания.
+        </p>
+        <p class="muted"><strong>Ключевой момент:</strong> можно менять Сложность, не трогая Плотность и Боссов.</p>
+      </div>
+
+      <div class="card">
+        <h4 style="margin:0 0 6px 0;">2) Плотность</h4>
+        <p>
+          Плотность — это про <strong>количество монстров</strong> на картах, а не про их силу.
+          Ванильная плотность сохраняет «классическое ощущение MMMerge». Высокая плотность делает карты настоящими полями боя.
+        </p>
+        <p class="muted">
+          Самое безумное: система может масштабироваться до огромных стычек с сотнями врагов — вплоть до
+          <strong>~1000 активных монстров</strong> на одной карте — при сохранении оригинального распределения монстров.
+        </p>
+        <p class="muted">
+          Если хочешь больше экшена, но не хочешь «губчатых» врагов — Плотность твой лучший друг.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4 style="margin:0 0 6px 0;">3) Боссы</h4>
+        <p>
+          Эта настройка управляет появлением <strong>дополнительных уникальных боссов</strong>.
+          Можно оставить Сложность и Плотность на чистой ванили и включить только Боссов —
+          и мир сразу получит элитные встречи, которые приятно ломают рутину.
+        </p>
+        <p class="muted">
+          Боссы создаются из существующих монстров, а затем усиливаются особыми умениями/элитными комбо,
+          так что они ощущаются как «монстры этой зоны, только эволюционировавшие», а не случайные замены.
+        </p>
+      </div>
+    </div>
+
+    <h3>Полная свобода (миксуй или изолируй)</h3>
+    <ul>
+      <li>Меняй <strong>только</strong> Плотность.</li>
+      <li>Меняй <strong>только</strong> Сложность.</li>
+      <li>Включай <strong>только</strong> Боссов.</li>
+      <li>Или комбинируй всё сразу для полного Doomfall-хаоса.</li>
+    </ul>
+
+    <h3>Дружелюбно к новичкам</h3>
+    <p>
+      Doomfall может быть экстремальным, но он сделан так, чтобы оставаться играбельным для новичков.
+      Низкие пресеты (<strong>Piece of Cake</strong>, <strong>Very Easy</strong>, <strong>Easy</strong>) существуют не просто так:
+      ты можешь освоиться с системами, а затем постепенно двигать по одному ползунку.
+    </p>
+
+    <h3>Основная философия</h3>
+    <p class="note">
+      Идея Doomfall простая: <strong>сложность в MMMerge должна настраиваться</strong>.
+      Ты решаешь, насколько далеко зайдёт игра — не фиксированные пресеты и не лимиты движка.
+    </p>
+
+    <figure style="margin: 14px 0;">
+      <img class="img" src="https://heroesofthenexus.com/assets/images/doomfall-4.png" alt="Doomfall геймплей: модульная сложность, плотность, боссы" loading="lazy" />
+    </figure>
+
+    <h3>Что Doomfall реально добавляет (по-игроковому)</h3>
+
+    <h4>Полный контроль сложности</h4>
+    <p>
+      Скейлинг сложности модульный и независимый от плотности монстров.
+      Ты можешь тонко настроить общий челлендж, давление урона, живучесть и интенсивность боёв —
+      прогресс ощущается плавным: от новичковых рангов до настоящей эндгейм-жесткости,
+      даже на знакомых картах MMMerge.
+    </p>
+
+    <h4>Экстремальная плотность (учёт особенностей движка)</h4>
+    <p>
+      Doomfall может выкрутить плотность далеко за ваниль. Система спроектирована так, чтобы оставаться стабильной:
+      умное псевдо-спавнение, сохранение оригинального распределения монстров
+      и фильтрация нестабильных сущностей (городские NPC/стража), чтобы игра не «взорвалась».
+    </p>
+
+    <h4>Динамическая система боссов (50+ дополнительных боссов)</h4>
+    <p>
+      Doomfall добавляет <strong>более 50 дополнительных боссов</strong>, которые генерируются динамически из реальной популяции монстров на карте.
+      Это не случайные замены:
+    </p>
+    <ul>
+      <li>Выбираются из реальных популяций карты (так что подходят региону)</li>
+      <li>Редкие «минорные» типы избегаются, чтобы всё было честно и читабельно</li>
+      <li>Безопасный спавн после загрузки карты</li>
+    </ul>
+
+    <h4>Умения и аффиксы боссов (моменты «о нет»)</h4>
+    <p>
+      Боссы могут получить мощные умения, которые реально меняют бой — например:
+      <strong>Adamantite</strong>, <strong>Berserker</strong>, <strong>Blinker</strong>, <strong>Voodoo</strong>,
+      <strong>Diamondskin</strong>, <strong>Immolator</strong>, <strong>Horror</strong>, <strong>Lifedrinker</strong>,
+      <strong>Mana Vampire</strong>, <strong>Petrifier</strong>, <strong>Plagueborn</strong>, <strong>Summoner</strong>,
+      <strong>Terror</strong>, <strong>Void Stalker</strong>, <strong>Venomous</strong>, <strong>Wrath Animator</strong> и многое другое.
+    </p>
+
+    <h4>Элитные боссы (редкие, запоминающиеся, злые)</h4>
+    <p>
+      Иногда босс становится <strong>Elite</strong>: несколько синергичных умений, повышенная живучесть
+      и бой, который может полностью украсть твой план на ближайшие пять минут (в хорошем смысле).
+      Примеры: <strong>Destroyer</strong>, <strong>Gladiator</strong>, <strong>Phantom</strong>, <strong>War Bringer</strong>,
+      <strong>Spectral Overlord</strong>, <strong>Colossus</strong>, <strong>Bastion</strong>.
+    </p>
+
+    <h4>Безопасно для движка и мультиплеера</h4>
+    <p>
+      Даже при безумных настройках Doomfall ставит стабильность движка MMMerge на первое место:
+      отложенный безопасный спавн, блокировки от дубликатов боссов, корректный сброс при New Game,
+      динамические имена для избежания конфликтов и мультиплеер-safe поведение.
+    </p>
+
+    <h3>Кому подойдёт Doomfall</h3>
+    <ul>
+      <li>Новичкам, которым нужен настраиваемый опыт MMMerge</li>
+      <li>Игрокам, которые любят плавный прогресс сложности</li>
+      <li>Ветеранам, которые охотятся за жёстким эндгейм-челленджем</li>
+      <li>Экспериментаторам, которые любят выкручивать системы на максимум</li>
+      <li>Мультиплеер-группам, которым нужен масштабируемый хаос</li>
+    </ul>
+
+    <h3>Кому не подойдёт</h3>
+    <ul>
+      <li>Тем, кто хочет почти нетронутый, классический MMMerge ран с минимальными изменениями</li>
+      <li>Тем, кому нужен только один фиксированный «ультрахардкор навсегда» пресет (Doomfall — про выбор)</li>
+    </ul>
+
+    <h3>В двух словах</h3>
+    <p class="note">
+      Doomfall превращает Might and Magic Merge в полностью модульную песочницу, где
+      <strong>Сложность</strong>, <strong>Плотность</strong> и <strong>боссы</strong> больше не ограничены оригинальным сетапом —
+      только тем, насколько далеко ты сдвинешь ползунки.
+    </p>
+
+    <h3>FAQ — Doomfall для MMMerge</h3>
+
+    <h4>Можно ли выкрутить все три настройки на максимум?</h4>
+    <p>
+      Да — можно поставить максимум Сложности, Плотности и Боссов.
+      Только не удивляйся, если результат будет полностью безумным: игра может стать реально перегруженной.
+      (Это весело… но не «тонко».)
+    </p>
+
+    <h4>Doomfall совместим с мультиплеером?</h4>
+    <p>
+      Да. Doomfall проектировался с учётом мультиплеера.
+      Не каждый редкий крайний случай гарантирован навсегда, но фундамент мультиплеер-safe,
+      а патчи могут закрывать любые странности, которые всплывут в реальности.
+    </p>
+
+    <h4>Почему в комплекте новые классы?</h4>
+    <p>
+      Потому что <strong>Extra Class Pack</strong> естественно вписывается в базовый MMMerge и даёт полный «ready-to-play» сетап.
+      Он включён, чтобы игроки получали полный пакет одной установкой — без того, чтобы новые классы насильно «вшивались» в системы сложности Doomfall.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Главные изменения (changelog highlights)</h2>
+    <div class="note">
+      <p style="margin:0;">
+        <strong>Большое обновление 3.0 (21/12/2025):</strong>
+        Теперь все классы и все навыки можно продвигать на <strong>всех континентах</strong> —
+        больше никакого «не тот континент, не те тренеры, я застрял».
+        <br />
+        <strong>Небольшой патч (30/12/2025):</strong>
+        Улучшен <strong>баланс PET’ов</strong> для некоторых классов (более ровно и менее «криво» на практике).
+      </p>
+    </div>
+    <p class="muted">
+      Общий вайб обновления простой: теперь можно играть тем классом, которым хочешь, где хочешь,
+      без того, чтобы прогресс ломался на каждом втором острове.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Что такое Advanced Classes (Extra Class Pack) в MMMerge?</h2>
+    <p>
+      <strong>Advanced Classes</strong> (часто говорят <strong>Extra Class Pack</strong>) — это расширение классов для
+      <strong>MMMerge</strong>, созданное для игроков, которые хотят свежие роли, но не хотят превращать базовую игру во что-то неузнаваемое.
+      Цель — не заменить ванильный контент, а <em>расширить</em> его.
+    </p>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Видео — демонстрация</h2>
+      <p class="muted">Вот видео по Advanced Classes:</p>
+      <div style="position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid #21314b;background:#0b0d10;">
+        <iframe
+          src="https://www.youtube.com/embed/bYeKl9I2LEo"
+          title="Advanced Classes для MMMerge — Showcase"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <p class="muted" style="margin-top:10px;">
+        Прямая ссылка:
+        <a href="https://youtu.be/bYeKl9I2LEo?si=nEwyUfLix-8MKRZk" target="_blank" rel="noopener">youtu.be/bYeKl9I2LEo</a>
+      </p>
+    </div>
+
+    <ul>
+      <li><strong>21 новый играбельный класс</strong>, вдохновлённый официальным лором <strong>Might and Magic</strong> и фракциями из <strong>Heroes of Might and Magic</strong>.</li>
+      <li>Включает <strong>полный набор персонажей от Maestro</strong> (используется с разрешения — огромный респект).</li>
+      <li><strong>Ванильный контент MMMerge остаётся нетронутым</strong>: если ты пурист — оригинальный баланс и ощущение прогресса остаются.</li>
+      <li><strong>Дружелюбно к мультиплееру</strong> и рассчитано на стабильность в долгих прохождениях.</li>
+    </ul>
+
+    <p class="muted">
+      Короче: мод из серии «хочу новую фантазию для партии». Тот самый, который заставляет перезапустить MMMerge просто ради другого состава.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Быстрая установка</h2>
+    <ol>
+      <li>Установи <strong>Might and Magic 8</strong>.</li>
+      <li>
+        Скачай базовый <strong>MMMerge</strong>:
+        <a class="btn" href="https://1drv.ms/u/s!AklOx6zaOmQgbHB1-Avia15ruaI?e=H4IcBJ" target="_blank" rel="noopener">Скачать MMMerge</a>
+      </li>
+      <li>
+        Скачай <strong>Extra Class Pack / Advanced Classes</strong>:
+        <a class="btn" href="https://www.nexusmods.com/mightandmagicviii/mods/20" target="_blank" rel="noopener">Скачать на NexusMods</a>
+      </li>
+    </ol>
+
+    <p class="muted">
+      Пак уже включает базовые вещи для нормальной работы (патчи MMMerge, мультиплеер-совместимость, полный character pack).
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Обзор новых классов (21)</h2>
+    <p class="muted">
+      Каждый класс привязан к идентичности фракции. И самое важное — это не просто «скины»:
+      они толкают тебя к разным решениям: оружие, школы магии, призывы, контроль, выживаемость.
+      Ниже — обзор в стиле игрока (без маркетинговой мишуры, только «как это ощущается»).
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Barbarian <span class="muted">(Stronghold)</span></h3>
+        <p>Чистое дикое давление. Чем ниже здоровье, тем страшнее ты становишься — ярость как игровой цикл.</p>
+        <ul>
+          <li>Может носить <strong>две двуручные пушки</strong> одновременно (dual-wield).</li>
+          <li><strong>Special:</strong> по команде выпускает всплеск ярости.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Battlemage <span class="muted">(Stronghold)</span></h3>
+        <p>Магия с грубой силой. Гибрид шамана и воина, который сильнее, когда собирает «трофеи».</p>
+        <ul>
+          <li>Потенциал <strong>стана</strong> через магию.</li>
+          <li><strong>+50% Air</strong> урона.</li>
+          <li><strong>Клавиша B:</strong> призови свою гоблинскую бригаду.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Corsair <span class="muted">(Cove)</span></h3>
+        <p>Быстрый, агрессивный и взрывной — награждает за темп и выбор целей.</p>
+        <ul>
+          <li><strong>Special:</strong> может бить несколько целей одновременно.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Navigator <span class="muted">(Cove)</span></h3>
+        <p>Маг воды для поддержки/урона. Бафни команду, а потом утопи врага в контроле.</p>
+        <ul>
+          <li><strong>+50% Water</strong> урона.</li>
+          <li><strong>Клавиша B:</strong> призови команду.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Elementalist <span class="muted">(Conflux)</span></h3>
+        <p>Фантазия «сбалансированного архимага»: все 4 стихии + хранитель, который меняет бои.</p>
+        <ul>
+          <li><strong>Mana Shield</strong> для дополнительной защиты.</li>
+          <li><strong>+25% elemental</strong> урона.</li>
+          <li><strong>Клавиша B:</strong> призови элементального хранителя.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Beastmaster <span class="muted">(Fortress)</span></h3>
+        <p>Суммонер/дрессировщик: звери, синергии и ощущение «петы — мой билд».</p>
+        <ul>
+          <li><strong>Клавиша B:</strong> призови существ.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Trogmaster <span class="muted">(Dungeon)</span></h3>
+        <p>Мили-монстр с изюминкой: фронтлайнер, который ещё и призывает — в данжах становится веселее.</p>
+        <ul>
+          <li><strong>Клавиша B:</strong> призови своих рабов.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Demonologist <span class="muted">(Inferno / Hellfire)</span></h3>
+        <p>Огненная разрушительная магия с демонскими узами. Любишь «сжечь экран» — это твоё.</p>
+        <ul>
+          <li><strong>+50% Fire</strong> урона.</li>
+          <li><strong>Клавиша B:</strong> призови демонов.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Diplomat <span class="muted">(Harmondale)</span></h3>
+        <p>Игры разума. Контроль, чарм, безумие — и да, ты редко один.</p>
+        <ul>
+          <li><strong>+100% Mind</strong> урона.</li>
+          <li><strong>Клавиша B:</strong> призови наёмников.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Shaman <span class="muted">(MM10 / вдохновлён Heroes 5)</span></h3>
+        <p>Живучий, адаптивный, со стихиями. Может драться руками или переключаться на элементальный урон.</p>
+        <ul>
+          <li><strong>+50% Earth</strong> урона.</li>
+          <li><strong>Special:</strong> шаманский всплеск ярости.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Voodoo Sorcerer <span class="muted">(вдохновлён Heroes 6/7)</span></h3>
+        <p>Духи, порча, проклятия — контроль поля боя с призрачным вайбом.</p>
+        <ul>
+          <li><strong>Клавиша B:</strong> призови духов.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Mercenary <span class="muted">(вдохновлён MM9/MM10)</span></h3>
+        <p>Практичное насилие: поймай, отключи, добей. Очень «грязный боец».</p>
+        <ul>
+          <li><strong>Fatal Blow:</strong> тройной урон при HP ниже 30%.</li>
+          <li><strong>Клавиша C:</strong> бросить сеть (стан).</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Runepriest <span class="muted">(Deepflame Dwarves)</span></h3>
+        <p>Руны + священный огонь. Боевой маг, который начинает бить как грузовик, когда руны «заводятся».</p>
+        <ul>
+          <li><strong>Special:</strong> может наносить двойной урон рунической магией.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Jarl <span class="muted">(Northlands)</span></h3>
+        <p>Вайб вождя: крепкий, уважаемый и очень эффективный с рунами и молотами.</p>
+        <ul>
+          <li>Может носить <strong>молот в off-hand</strong>.</li>
+          <li>Потенциал двойного рунического урона.</li>
+          <li><strong>Клавиша C:</strong> толчок / отбрасывание.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Freemage <span class="muted">(Mage Guild)</span></h3>
+        <p>Стихийный специалист с убийцей внутри: заморозка, трюки со временем, штормы — и жёсткий execute-урон.</p>
+        <ul>
+          <li><strong>+25% elemental</strong> урона.</li>
+          <li><strong>Fatal Blow:</strong> тройной урон при HP ниже 30%.</li>
+          <li><strong>Клавиша C:</strong> замораживающие способности.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Trickster <span class="muted">(Cove / Assassins)</span></h3>
+        <p>Обман + контроль позиции. Телепорт за цель и «удаление», когда она на лоу-HP.</p>
+        <ul>
+          <li><strong>Fatal Blow:</strong> тройной урон при HP ниже 30%.</li>
+          <li><strong>Клавиша C:</strong> телепорт за цель.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Vindicator <span class="muted">(Holy Empire)</span></h3>
+        <p>Командует боем силой воли. Боевые кличи, фанатизм и чистая физическая доминация.</p>
+        <ul>
+          <li>Может носить <strong>две двуручные мечи</strong> одновременно (dual-wield).</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Bone Guard <span class="muted">(Heresh / Некромантия)</span></h3>
+        <p>Фантазия командира нежити. Не получилось договориться? Отлично — подними армию и закрой вопрос.</p>
+        <ul>
+          <li>Может носить <strong>две двуручные топоры</strong> одновременно (dual-wield).</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Thief <span class="muted">(специальный ре워크)</span></h3>
+        <p>Классический вор, но в бою заметно острее.</p>
+        <ul>
+          <li><strong>Fatal Blow:</strong> тройной урон при HP ниже 30%.</li>
+          <li><strong>Клавиша C:</strong> оглушить ближайшего врага.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Knight <span class="muted">(улучшенная ваниль)</span></h3>
+        <p>Простой, iconic, надёжный — с приятным инструментом для входа в бой.</p>
+        <ul>
+          <li><strong>Клавиша C:</strong> рывок (charge) в цель.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Advanced Classes Mod 2.0 (Major &amp; Final Update)</h2>
+    <p>
+      После отзывов сообщества версия <strong>2.0</strong> вышла как «major and final» апдейт:
+      три новых класса, серьёзная балансировка и пачка фиксов, которые делают пак заметно ровнее.
+    </p>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Видео — демонстрация</h2>
+      <p class="muted">Вот видео по Advanced Classes 2.0:</p>
+      <div style="position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid #21314b;background:#0b0d10;">
+        <iframe
+          src="https://www.youtube.com/embed/09HG-g_MK3s"
+          title="Advanced Classes для MMMerge — Showcase"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <p class="muted" style="margin-top:10px;">
+        Прямая ссылка:
+        <a href="https://youtu.be/09HG-g_MK3s?si=mRiTc2Vs5DgM3Lq9" target="_blank" rel="noopener">youtu.be/09HG-g_MK3s</a>
+      </p>
+    </div>
+
+    <h3>Новые играбельные классы</h3>
+    <div class="grid">
+      <div class="card">
+        <h4 style="margin:0 0 6px 0;">Demoniac <span class="muted">(Inferno)</span></h4>
+        <p>
+          Жёсткий мили-брузер, связанный с чем-то инфернальным. Чем сильнее тебя бьют, тем больше «просыпается» демон.
+          Класс, который превращает выживание в источник урона.
+        </p>
+        <ul>
+          <li>Может dual-wield <strong>двуручные топоры</strong>.</li>
+          <li><strong>Special:</strong> случайный демон иногда помогает прямо в бою.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4 style="margin:0 0 6px 0;">Witch <span class="muted">(Fortress)</span></h4>
+        <p>
+          В первую очередь контроль, во вторую — урон. Проклятия, токсины, замедление и цепкий sustain-цикл.
+        </p>
+        <ul>
+          <li><strong>+100% урона</strong> для атакующих заклинаний Body/Mind/Spirit.</li>
+          <li><strong>Special:</strong> замедляет монстров при касте и лечится от любого заклинания.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4 style="margin:0 0 6px 0;">Alchemist <span class="muted">(Tower)</span></h4>
+        <p>
+          Самый странный (в хорошем смысле): фронтлайн-маг-кузнец с взрывоопасными творениями.
+          Низкие HP — намеренно: побеждать нужно умом, а не фейс-танком.
+        </p>
+        <ul>
+          <li><strong>Special:</strong> зачарованная броня сильно снижает входящий урон.</li>
+          <li>Может dual-wield <strong>булавы</strong>.</li>
+          <li><strong>Клавиша B:</strong> командуй/призывай химические создания.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Баланс и улучшения</h3>
+    <ul>
+      <li><strong>Runic Power</strong> (Jarl &amp; Runepriest) обновлён с «Thor» эффектом.</li>
+      <li><strong>Trickster</strong> теперь разворачивается к цели после телепорта; кулдаун blink снижен с <strong>25с → 15с</strong>.</li>
+      <li>Добавлен <strong>Ghost Dragon</strong> как играбельный персонаж.</li>
+    </ul>
+
+    <h3>Крупные фиксы</h3>
+    <ul>
+      <li>
+        Добавлена консольная команда <strong>DeletePETS()</strong> (<span class="k">F1</span>) для редких случаев, когда питомец блокирует квесты, арены или прогресс.
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Update 3.0: Авторангинг навыков и прогресс без привязки к континентам</h2>
+    <p>
+      Это фича, которая меняет длинные прохождения MMMerge:
+      теперь можно играть <strong>любым классом на любом континенте</strong>, не боясь отсутствия тренеров.
+      Если на континенте нет нужного тренера, навык будет
+      <strong>автоматически повышаться по мере уровня</strong>.
+    </p>
+
+    <p class="note">
+      <strong>Пример:</strong>
+      Monk будет автоматически повышать <strong>Dodge</strong> и <strong>Unarmed</strong>, играя на Jadame или Enroth —
+      но не на Antagarich, где тренеры для этих навыков существуют.
+    </p>
+
+    <h3>Другие важные изменения</h3>
+    <ul>
+      <li>Пул призывов Navigator ребалансирован для лучшей стабильности и контроля.</li>
+      <li>Тролли теперь могут dual-wield <strong>две булавы</strong>.</li>
+      <li>Минотавры теперь могут dual-wield <strong>две секиры</strong>.</li>
+      <li>Прояснены/исправлены описания нескольких навыков.</li>
+      <li>Дистанция отталкивания Demoniac в подземельях снижена, чтобы монстры не застревали в стенах.</li>
+      <li>Beastmaster теперь имеет <strong>GM Identify Monster</strong> и <strong>GM Disarm Trap</strong>.</li>
+      <li>Bone Guard теперь имеет <strong>GM Disarm Trap</strong> (тематическое отражение Vindicator).</li>
+    </ul>
+
+    <figure style="margin: 16px 0 0 0;">
+      <img class="img" src="https://heroesofthenexus.com/assets/images/Skills_list_by_Karol.png" alt="Advanced Classes — список навыков (изображение от Karol)" loading="lazy" />
+      <figcaption class="muted" style="margin-top:8px;">
+        Список навыков от Karol — большое спасибо.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Продвижения по Enroth, Antagarich и Jadame</h2>
+    <p class="muted">
+      Практическая таблица продвижений по трём континентам в MMMerge.
+      (Для классов, родных для Jadame, обычно нужна вторая промоция на других континентах, чтобы завершить цепочку.)
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Класс</th>
+          <th>Enroth (MM6)</th>
+          <th>Antagarich (MM7)</th>
+          <th>Jadame (MM8)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Archer</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
+        <tr><td>Cleric</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+        <tr><td>Dark Elf</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
+        <tr><td>Dragon</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+        <tr><td>Druid</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+        <tr><td>Knight</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>Minotaur</td><td>Paladin</td><td>Paladin</td><td>Minotaur</td></tr>
+        <tr><td>Monk</td><td>Cleric</td><td>Monk</td><td>Cleric</td></tr>
+        <tr><td>Paladin</td><td>Paladin</td><td>Paladin</td><td>Minotaur</td></tr>
+        <tr><td>Ranger</td><td>Archer</td><td>Ranger</td><td>Dark Elf</td></tr>
+        <tr><td>Thief</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
+        <tr><td>Troll</td><td>Knight</td><td>Knight</td><td>Troll</td></tr>
+        <tr><td>Vampire</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
+        <tr><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td><td>Necromancer</td></tr>
+        <tr><td>Necromancer</td><td>Sorcerer</td><td>Sorcerer</td><td>Necromancer</td></tr>
+        <tr><td>Peasant</td><td>—</td><td>—</td><td>—</td></tr>
+
+        <tr><th colspan="4">Advanced / HOTN Classes</th></tr>
+
+        <tr><td>Vindicator</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+        <tr><td>Bone Guard</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>Shaman</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+        <tr><td>Elementalist</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+        <tr><td>Beastmaster</td><td>Archer</td><td>Ranger</td><td>Dark Elf</td></tr>
+        <tr><td>Voodoo Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+        <tr><td>Demonologist</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+        <tr><td>Diplomat</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+        <tr><td>Barbarian</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>Mercenary</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>RunePriest</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+        <tr><td>FreeMage</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+        <tr><td>Jarl</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>Corsair</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>Trickster</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
+        <tr><td>TrogMaster</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>BattleMage</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+        <tr><td>Navigator</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+        <tr><td>Alchemist</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>Demoniac</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+        <tr><td>Witch</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+        <tr><td>Mystic</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+        <tr><td>Bard</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
+      </tbody>
+    </table>
+
+    <p class="muted" style="margin-top:10px;">
+      <em>*Для классов, родных для Jadame, нужно завершить вторую промоцию на других континентах, чтобы получить финальное продвижение.</em>
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">FAQ (ответы игрокам)</h2>
+
+    <h3>Можно ли изменить горячие клавиши для спец-умений?</h3>
+    <p>
+      Да. Открой <span class="k">Scripts &gt; General</span>, файл <span class="k">zzz_HOTN-initialize</span>,
+      и поменяй значения клавиш (нужно вводить число).
+    </p>
+
+    <h3>Совместимо ли с мультиплеером?</h3>
+    <p>
+      Да — мультиплеер полностью играбелен. Деталь, которая иногда удивляет:
+      призывы остаются живыми, даже если их хозяин умирает. Это сделано намеренно и помогает избежать редких,
+      но жёстких проблем движка, когда сущности удаляются при смерти. На практике это держит ран стабильным для всех.
+    </p>
+
+    <h3>Совместимо ли с MAW?</h3>
+    <p>
+      Нет. При сочетании возникает слишком много ошибок в игре, поэтому это не рекомендуется.
+    </p>
+
+    <h3>Планируются ли ещё моды?</h3>
+    <p>
+      Да. Изначально планировался более крупный проект <strong>Heroes of the Nexus</strong>.
+      Полная версия запланирована на будущее, а этот модуль был опубликован как самостоятельный,
+      лёгкий пак, который остаётся простым для интеграции в базовый MMMerge.
+    </p>
+
+    <h3>Почему Dodge работает иначе? Он сильнее?</h3>
+    <p>
+      Dodge был изменён так, чтобы мог уклоняться от всех атак независимо от ранга — с низким шансом на низких уровнях
+      (около 5%), повышаясь примерно до 25% при 20 очках навыка.
+      Это сделано потому, что ванильное поведение багнуто, и несколько новых классов сильно зависят от Dodge.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2 style="margin-top:0;">Благодарности и сообщество</h2>
+    <p>
+      Большое спасибо <strong>Karol</strong>, <strong>Mortis</strong> и <strong>Gryz.Malhay</strong> за баг-репорты и тестирование —
+      именно этот фидбек превратил релиз Advanced Classes в чистый и играбельный пак.
+      Также спасибо <strong>Maestro</strong>, <strong>yuji sakai</strong> и <strong>Malekith</strong>.
+    </p>
+    <p>
+      Больше информации о следующем релизе:
+      <a href="https://heroesofthenexus.com" target="_blank" rel="noopener">heroesofthenexus.com</a>.
+      Discord:
+      <a href="https://discord.gg/hcD4b9yXdj" target="_blank" rel="noopener">discord.gg/hcD4b9yXdj</a>.
+    </p>
+  </section>
+</main>
+
+<footer class="muted">
+  <p>
+    Теги: Might and Magic, Might and Magic Merge, MMMerge, MM6, MM7, MM8, Enroth, Antagarich, Jadame, мод, новые классы, Heroes of Might and Magic.
+  </p>
+</footer>
+</body>
+</html>
