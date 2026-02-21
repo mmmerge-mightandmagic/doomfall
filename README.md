@@ -1,56 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Doomfall for MMMerge — Modular Difficulty, Density & Boss Overhaul (Might and Magic Merge)</title>
-
-  <meta name="description" content="Doomfall is a deep gameplay overhaul for Might and Magic Merge (MMMerge): fully modular Difficulty, Density, and Boss systems that let you shape your run from vanilla-friendly to extreme endgame chaos — stable and multiplayer-ready." />
-  <meta name="keywords" content="Doomfall, MMMerge, Might and Magic Merge, Might and Magic, MM6, MM7, MM8, Enroth, Antagarich, Jadame, mod, difficulty modular, monster density, dynamic bosses, extra bosses, Heroes of the Nexus, Extra Class Pack, Advanced Classes" />
-
-  <link rel="canonical" href="https://mmmerge.github.io/doomfall/" />
-
-  <meta property="og:title" content="Doomfall for MMMerge — Modular Overhaul (Difficulty, Density, Bosses)" />
-  <meta property="og:description" content="A modular overhaul for Might and Magic Merge (MMMerge) that separates Difficulty, Density and Bosses into independent systems — play it vanilla-friendly or push the engine to chaotic endgame fights, safely and in multiplayer." />
-  <meta property="og:type" content="website" />
-
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; margin: 0; background: #0b0d10; color: #e9eef6; }
-    a { color: #8cc8ff; }
-    a:hover { opacity: .9; }
-    header, main, footer { max-width: 980px; margin: 0 auto; padding: 18px; }
-    header { padding-top: 28px; }
-    .card { background: #121722; border: 1px solid #1f2a3a; border-radius: 14px; padding: 18px; margin: 14px 0; }
-    .tag { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #162033; border: 1px solid #243552; font-size: 12px; margin-right: 8px; }
-    h1 { font-size: 34px; margin: 0 0 6px 0; }
-    h2 { margin-top: 28px; }
-    h3 { margin-top: 18px; }
-    ul { padding-left: 18px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
-    .muted { color: #b8c4d6; }
-    .note { background: #0f1b2b; border: 1px solid #203857; padding: 12px 14px; border-radius: 12px; }
-    .btn {
-      display: inline-block;
-      padding: 10px 14px;
-      border-radius: 12px;
-      background: #1b2a44;
-      border: 1px solid #2a4370;
-      text-decoration: none;
-      margin: 6px 10px 6px 0; /* ← AJOUT */
-    }
-    .btn:hover { background: #213356; }
-    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 12px; border: 1px solid #20304a; }
-    th, td { padding: 10px 10px; border-bottom: 1px solid #20304a; vertical-align: top; }
-    th { text-align: left; background: #121c2d; }
-    tr:last-child td { border-bottom: none; }
-    .img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #22314b; }
-    .k { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: #0e1522; border: 1px solid #21314b; padding: 2px 6px; border-radius: 8px; }
-    footer { padding-bottom: 30px; }
-  </style>
-</head>
-
-<body>
 <header>
   <span class="tag">Doomfall</span>
   <span class="tag">MMMerge</span>
@@ -844,4 +791,3 @@
   </p>
 </footer>
 </body>
-</html>
