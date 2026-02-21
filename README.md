@@ -31,14 +31,14 @@
     .muted { color: #b8c4d6; }
     .note { background: #0f1b2b; border: 1px solid #203857; padding: 12px 14px; border-radius: 12px; }
     .btn {
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 12px;
-  background: #1b2a44;
-  border: 1px solid #2a4370;
-  text-decoration: none;
-  margin: 6px 10px 6px 0; /* ← AJOUT */
-  }
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #1b2a44;
+      border: 1px solid #2a4370;
+      text-decoration: none;
+      margin: 6px 10px 6px 0; /* ← AJOUT */
+    }
     .btn:hover { background: #213356; }
     table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 12px; border: 1px solid #20304a; }
     th, td { padding: 10px 10px; border-bottom: 1px solid #20304a; vertical-align: top; }
@@ -334,34 +334,35 @@
   </p>
 
 </section>
-  <section class="card">
-    <h2 style="margin-top:0;">Changelog highlights</h2>
 
-    <div class="note">
-      <p style="margin:0;">
-        <strong>Major Update 3.0 (21/12/2025):</strong>
-        All classes and all skills can now be promoted on <strong>all continents</strong> —
-        no more “wrong continent, wrong trainers, guess I’m stuck”.
-        <br />
-        <strong>Minor Patch (30/12/2025):</strong>
-        Better <strong>PET balancing</strong> for a few classes (more consistent and less janky in practice).
-      </p>
-    </div>
+<section class="card">
+  <h2 style="margin-top:0;">Changelog highlights</h2>
 
-    <p class="muted">
-      The vibe of this update is simple: you can finally play the class you want, where you want,
-      without the progression system fighting you every other island.
+  <div class="note">
+    <p style="margin:0;">
+      <strong>Major Update 3.0 (21/12/2025):</strong>
+      All classes and all skills can now be promoted on <strong>all continents</strong> —
+      no more “wrong continent, wrong trainers, guess I’m stuck”.
+      <br />
+      <strong>Minor Patch (30/12/2025):</strong>
+      Better <strong>PET balancing</strong> for a few classes (more consistent and less janky in practice).
     </p>
-  </section>
+  </div>
 
-  <section class="card">
-    <h2 style="margin-top:0;">What is Advanced Classes (Extra Class Pack) in MMMerge?</h2>
+  <p class="muted">
+    The vibe of this update is simple: you can finally play the class you want, where you want,
+    without the progression system fighting you every other island.
+  </p>
+</section>
 
-    <p>
-      <strong>Advanced Classes</strong> (often called the <strong>Extra Class Pack</strong>) is a class-focused expansion module for
-      <strong>MMMerge</strong>, built for players who want fresh roles without turning the base game into something unrecognizable.
-      The goal is not to replace vanilla content — it’s to <em>extend it</em>.
-    </p>
+<section class="card">
+  <h2 style="margin-top:0;">What is Advanced Classes (Extra Class Pack) in MMMerge?</h2>
+
+  <p>
+    <strong>Advanced Classes</strong> (often called the <strong>Extra Class Pack</strong>) is a class-focused expansion module for
+    <strong>MMMerge</strong>, built for players who want fresh roles without turning the base game into something unrecognizable.
+    The goal is not to replace vanilla content — it’s to <em>extend it</em>.
+  </p>
 
   <div class="card">
     <h2 style="margin-top:0;">Video showcase</h2>
@@ -382,232 +383,232 @@
     </p>
   </div>
 
-    <ul>
-      <li><strong>21 new playable classes</strong> inspired by official <strong>Might and Magic</strong> lore and the <strong>Heroes of Might and Magic</strong> factions.</li>
-      <li>Includes the <strong>full character pack from Maestro</strong> (used with permission — huge respect).</li>
-      <li><strong>Vanilla MMMerge content stays intact</strong>: if you’re a purist, you can still enjoy the original balance and progression “feel”.</li>
-      <li><strong>Multiplayer-friendly</strong> and designed to remain stable in long playthroughs.</li>
-    </ul>
+  <ul>
+    <li><strong>21 new playable classes</strong> inspired by official <strong>Might and Magic</strong> lore and the <strong>Heroes of Might and Magic</strong> factions.</li>
+    <li>Includes the <strong>full character pack from Maestro</strong> (used with permission — huge respect).</li>
+    <li><strong>Vanilla MMMerge content stays intact</strong>: if you’re a purist, you can still enjoy the original balance and progression “feel”.</li>
+    <li><strong>Multiplayer-friendly</strong> and designed to remain stable in long playthroughs.</li>
+  </ul>
 
-    <p class="muted">
-      In short: it’s the “I want a new party fantasy” mod. The kind of thing that makes you restart MMMerge just to try a different lineup.
-    </p>
-  </section>
+  <p class="muted">
+    In short: it’s the “I want a new party fantasy” mod. The kind of thing that makes you restart MMMerge just to try a different lineup.
+  </p>
+</section>
 
-  <section class="card">
-    <h2 style="margin-top:0;">Quick installation</h2>
+<section class="card">
+  <h2 style="margin-top:0;">Quick installation</h2>
 
-    <ol>
-      <li>Install <strong>Might and Magic 8</strong>.</li>
-      <li>
-        Download the base <strong>MMMerge</strong>:
-        <a class="btn" href="https://1drv.ms/u/s!AklOx6zaOmQgbHB1-Avia15ruaI?e=H4IcBJ" target="_blank" rel="noopener">Download MMMerge</a>
-      </li>
-      <li>
-        Download <strong>Extra Class Pack / Advanced Classes</strong>:
-        <a class="btn" href="https://www.nexusmods.com/mightandmagicviii/mods/20" target="_blank" rel="noopener">Download on NexusMods</a>
-      </li>
-    </ol>
+  <ol>
+    <li>Install <strong>Might and Magic 8</strong>.</li>
+    <li>
+      Download the base <strong>MMMerge</strong>:
+      <a class="btn" href="https://1drv.ms/u/s!AklOx6zaOmQgbHB1-Avia15ruaI?e=H4IcBJ" target="_blank" rel="noopener">Download MMMerge</a>
+    </li>
+    <li>
+      Download <strong>Extra Class Pack / Advanced Classes</strong>:
+      <a class="btn" href="https://www.nexusmods.com/mightandmagicviii/mods/20" target="_blank" rel="noopener">Download on NexusMods</a>
+    </li>
+  </ol>
 
-    <p class="muted">
-      The pack already bundles the essentials for smooth usage (MMMerge patches, multiplayer compatibility, full character pack).
-    </p>
-  </section>
+  <p class="muted">
+    The pack already bundles the essentials for smooth usage (MMMerge patches, multiplayer compatibility, full character pack).
+  </p>
+</section>
 
-  <section class="card">
-    <h2 style="margin-top:0;">New classes overview (21)</h2>
-    <p class="muted">
-      Each class is anchored in a faction identity. The best part is that they don’t just feel like reskins —
-      they push you into different decisions: weapons, spell schools, summons, crowd control, survivability.
-      Below is a player-style overview (no marketing fluff, just the “what it feels like to play”).
-    </p>
+<section class="card">
+  <h2 style="margin-top:0;">New classes overview (21)</h2>
+  <p class="muted">
+    Each class is anchored in a faction identity. The best part is that they don’t just feel like reskins —
+    they push you into different decisions: weapons, spell schools, summons, crowd control, survivability.
+    Below is a player-style overview (no marketing fluff, just the “what it feels like to play”).
+  </p>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Barbarian <span class="muted">(Stronghold)</span></h3>
-        <p>Pure feral pressure. The lower your health goes, the more terrifying you become — rage as a gameplay loop.</p>
-        <ul>
-          <li>Can dual-wield <strong>two two-handed weapons</strong>.</li>
-          <li><strong>Special:</strong> unleash a rage burst on demand.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Battlemage <span class="muted">(Stronghold)</span></h3>
-        <p>Spellcasting with a brutal edge. Feels like a shaman-warrior hybrid that grows stronger as you take trophies.</p>
-        <ul>
-          <li><strong>Stun</strong> potential through magic.</li>
-          <li><strong>+50% Air</strong> damage.</li>
-          <li><strong>B key:</strong> summon your goblin crew.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Corsair <span class="muted">(Cove)</span></h3>
-        <p>Fast, aggressive, and volatile — the kind of class that rewards momentum and target selection.</p>
-        <ul>
-          <li><strong>Special:</strong> can hit multiple targets at once.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Navigator <span class="muted">(Cove)</span></h3>
-        <p>Water-focused support/offense mage. Bless the team, then drown the enemy in control and pressure.</p>
-        <ul>
-          <li><strong>+50% Water</strong> damage.</li>
-          <li><strong>B key:</strong> call the crew.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Elementalist <span class="muted">(Conflux)</span></h3>
-        <p>The “balanced archmage” fantasy done right: all four elements, plus a guardian that changes fights.</p>
-        <ul>
-          <li><strong>Mana Shield</strong> for extra protection.</li>
-          <li><strong>+25% elemental</strong> damage.</li>
-          <li><strong>B key:</strong> summon elemental guardian.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Beastmaster <span class="muted">(Fortress)</span></h3>
-        <p>Summoner-tamer energy: beasts, synergies, and that “my pets are my build” feeling.</p>
-        <ul>
-          <li><strong>B key:</strong> call creatures.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Trogmaster <span class="muted">(Dungeon)</span></h3>
-        <p>Melee menace with a twist: a frontline fighter that can also summon, which makes dungeon runs spicy.</p>
-        <ul>
-          <li><strong>B key:</strong> summon your slaves.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Demonologist <span class="muted">(Inferno / Hellfire)</span></h3>
-        <p>Fire-focused destruction with demon bindings. If you like “burn the screen”, you’re home.</p>
-        <ul>
-          <li><strong>+50% Fire</strong> damage.</li>
-          <li><strong>B key:</strong> call demons.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Diplomat <span class="muted">(Harmondale)</span></h3>
-        <p>Mind games. Control, charm, madness — and yes, you’re rarely alone.</p>
-        <ul>
-          <li><strong>+100% Mind</strong> damage.</li>
-          <li><strong>B key:</strong> call mercenaries.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Shaman <span class="muted">(MM10 / Heroes 5 inspired)</span></h3>
-        <p>Tanky, adaptable, element-attuned. Can brawl barehanded or flip to elemental damage.</p>
-        <ul>
-          <li><strong>+50% Earth</strong> damage.</li>
-          <li><strong>Special:</strong> shaman rage burst.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Voodoo Sorcerer <span class="muted">(Heroes 6/7 inspired)</span></h3>
-        <p>Spirits, corruption, curses — battlefield control with ghostly flavor.</p>
-        <ul>
-          <li><strong>B key:</strong> call spirits.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Mercenary <span class="muted">(MM9/MM10 inspired)</span></h3>
-        <p>Pragmatic violence: trap, disable, then finish. Feels very “dirty fighter”.</p>
-        <ul>
-          <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
-          <li><strong>C key:</strong> throw a net (stun).</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Runepriest <span class="muted">(Deepflame Dwarves)</span></h3>
-        <p>Runes + divine fire. A battle-mage that hits like a truck when the rune engine kicks in.</p>
-        <ul>
-          <li><strong>Special:</strong> can deal double damage via rune magic.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Jarl <span class="muted">(Northlands)</span></h3>
-        <p>Diplomat-warrior energy: sturdy, respected, and brutally effective with runes and hammers.</p>
-        <ul>
-          <li>Can equip a <strong>hammer off-hand</strong>.</li>
-          <li>Double rune-magic damage potential.</li>
-          <li><strong>C key:</strong> push / knockback.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Freemage <span class="muted">(Mage Guild)</span></h3>
-        <p>Elemental specialist with assassin vibes: freeze, time tricks, storms — and nasty execute damage.</p>
-        <ul>
-          <li><strong>+25% elemental</strong> damage.</li>
-          <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
-          <li><strong>C key:</strong> freeze abilities.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Trickster <span class="muted">(Cove / Assassins)</span></h3>
-        <p>Deception + position control. Teleport behind targets and delete them when they’re low.</p>
-        <ul>
-          <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
-          <li><strong>C key:</strong> teleport behind target.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Vindicator <span class="muted">(Holy Empire)</span></h3>
-        <p>Battlefield command by force of will. War cries, zeal, and raw physical dominance.</p>
-        <ul>
-          <li>Can dual-wield <strong>two two-handed swords</strong>.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Bone Guard <span class="muted">(Heresh / Necromancy)</span></h3>
-        <p>Undead commander fantasy. Negotiation fails? Fine — raise an army and end the discussion.</p>
-        <ul>
-          <li>Can dual-wield <strong>two two-handed axes</strong>.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Thief <span class="muted">(special rework)</span></h3>
-        <p>The classic thief, but with a much sharper edge in combat.</p>
-        <ul>
-          <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
-          <li><strong>C key:</strong> stun a nearby enemy.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Knight <span class="muted">(vanilla enhanced)</span></h3>
-        <p>Simple, iconic, reliable — with a satisfying engage tool.</p>
-        <ul>
-          <li><strong>C key:</strong> charge an enemy.</li>
-        </ul>
-      </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Barbarian <span class="muted">(Stronghold)</span></h3>
+      <p>Pure feral pressure. The lower your health goes, the more terrifying you become — rage as a gameplay loop.</p>
+      <ul>
+        <li>Can dual-wield <strong>two two-handed weapons</strong>.</li>
+        <li><strong>Special:</strong> unleash a rage burst on demand.</li>
+      </ul>
     </div>
-  </section>
 
-  <section class="card">
-    <h2 style="margin-top:0;">Advanced Classes Mod 2.0 (Major &amp; Final Update)</h2>
+    <div class="card">
+      <h3>Battlemage <span class="muted">(Stronghold)</span></h3>
+      <p>Spellcasting with a brutal edge. Feels like a shaman-warrior hybrid that grows stronger as you take trophies.</p>
+      <ul>
+        <li><strong>Stun</strong> potential through magic.</li>
+        <li><strong>+50% Air</strong> damage.</li>
+        <li><strong>B key:</strong> summon your goblin crew.</li>
+      </ul>
+    </div>
 
-    <p>
-      After community feedback, version <strong>2.0</strong> landed as a “major and final” update:
-      three new classes, heavy balancing work, and a bunch of fixes that make the whole pack feel smoother.
-    </p>
+    <div class="card">
+      <h3>Corsair <span class="muted">(Cove)</span></h3>
+      <p>Fast, aggressive, and volatile — the kind of class that rewards momentum and target selection.</p>
+      <ul>
+        <li><strong>Special:</strong> can hit multiple targets at once.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Navigator <span class="muted">(Cove)</span></h3>
+      <p>Water-focused support/offense mage. Bless the team, then drown the enemy in control and pressure.</p>
+      <ul>
+        <li><strong>+50% Water</strong> damage.</li>
+        <li><strong>B key:</strong> call the crew.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Elementalist <span class="muted">(Conflux)</span></h3>
+      <p>The “balanced archmage” fantasy done right: all four elements, plus a guardian that changes fights.</p>
+      <ul>
+        <li><strong>Mana Shield</strong> for extra protection.</li>
+        <li><strong>+25% elemental</strong> damage.</li>
+        <li><strong>B key:</strong> summon elemental guardian.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Beastmaster <span class="muted">(Fortress)</span></h3>
+      <p>Summoner-tamer energy: beasts, synergies, and that “my pets are my build” feeling.</p>
+      <ul>
+        <li><strong>B key:</strong> call creatures.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Trogmaster <span class="muted">(Dungeon)</span></h3>
+      <p>Melee menace with a twist: a frontline fighter that can also summon, which makes dungeon runs spicy.</p>
+      <ul>
+        <li><strong>B key:</strong> summon your slaves.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Demonologist <span class="muted">(Inferno / Hellfire)</span></h3>
+      <p>Fire-focused destruction with demon bindings. If you like “burn the screen”, you’re home.</p>
+      <ul>
+        <li><strong>+50% Fire</strong> damage.</li>
+        <li><strong>B key:</strong> call demons.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Diplomat <span class="muted">(Harmondale)</span></h3>
+      <p>Mind games. Control, charm, madness — and yes, you’re rarely alone.</p>
+      <ul>
+        <li><strong>+100% Mind</strong> damage.</li>
+        <li><strong>B key:</strong> call mercenaries.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Shaman <span class="muted">(MM10 / Heroes 5 inspired)</span></h3>
+      <p>Tanky, adaptable, element-attuned. Can brawl barehanded or flip to elemental damage.</p>
+      <ul>
+        <li><strong>+50% Earth</strong> damage.</li>
+        <li><strong>Special:</strong> shaman rage burst.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Voodoo Sorcerer <span class="muted">(Heroes 6/7 inspired)</span></h3>
+      <p>Spirits, corruption, curses — battlefield control with ghostly flavor.</p>
+      <ul>
+        <li><strong>B key:</strong> call spirits.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Mercenary <span class="muted">(MM9/MM10 inspired)</span></h3>
+      <p>Pragmatic violence: trap, disable, then finish. Feels very “dirty fighter”.</p>
+      <ul>
+        <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
+        <li><strong>C key:</strong> throw a net (stun).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Runepriest <span class="muted">(Deepflame Dwarves)</span></h3>
+      <p>Runes + divine fire. A battle-mage that hits like a truck when the rune engine kicks in.</p>
+      <ul>
+        <li><strong>Special:</strong> can deal double damage via rune magic.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Jarl <span class="muted">(Northlands)</span></h3>
+      <p>Diplomat-warrior energy: sturdy, respected, and brutally effective with runes and hammers.</p>
+      <ul>
+        <li>Can equip a <strong>hammer off-hand</strong>.</li>
+        <li>Double rune-magic damage potential.</li>
+        <li><strong>C key:</strong> push / knockback.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Freemage <span class="muted">(Mage Guild)</span></h3>
+      <p>Elemental specialist with assassin vibes: freeze, time tricks, storms — and nasty execute damage.</p>
+      <ul>
+        <li><strong>+25% elemental</strong> damage.</li>
+        <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
+        <li><strong>C key:</strong> freeze abilities.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Trickster <span class="muted">(Cove / Assassins)</span></h3>
+      <p>Deception + position control. Teleport behind targets and delete them when they’re low.</p>
+      <ul>
+        <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
+        <li><strong>C key:</strong> teleport behind target.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Vindicator <span class="muted">(Holy Empire)</span></h3>
+      <p>Battlefield command by force of will. War cries, zeal, and raw physical dominance.</p>
+      <ul>
+        <li>Can dual-wield <strong>two two-handed swords</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Bone Guard <span class="muted">(Heresh / Necromancy)</span></h3>
+      <p>Undead commander fantasy. Negotiation fails? Fine — raise an army and end the discussion.</p>
+      <ul>
+        <li>Can dual-wield <strong>two two-handed axes</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Thief <span class="muted">(special rework)</span></h3>
+      <p>The classic thief, but with a much sharper edge in combat.</p>
+      <ul>
+        <li><strong>Fatal Blow:</strong> triple damage under 30% HP.</li>
+        <li><strong>C key:</strong> stun a nearby enemy.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Knight <span class="muted">(vanilla enhanced)</span></h3>
+      <p>Simple, iconic, reliable — with a satisfying engage tool.</p>
+      <ul>
+        <li><strong>C key:</strong> charge an enemy.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2 style="margin-top:0;">Advanced Classes Mod 2.0 (Major &amp; Final Update)</h2>
+
+  <p>
+    After community feedback, version <strong>2.0</strong> landed as a “major and final” update:
+    three new classes, heavy balancing work, and a bunch of fixes that make the whole pack feel smoother.
+  </p>
 
   <div class="card">
     <h2 style="margin-top:0;">Video showcase</h2>
@@ -628,214 +629,213 @@
     </p>
   </div>
 
-
-    <h3>New playable classes</h3>
-    <div class="grid">
-      <div class="card">
-        <h4 style="margin:0 0 6px 0;">Demoniac <span class="muted">(Inferno)</span></h4>
-        <p>
-          A brutal melee bruiser bound to something infernal. The more you’re hurt, the more the demon “wakes up”.
-          It’s the kind of class that turns survival into a damage source.
-        </p>
-        <ul>
-          <li>Can dual-wield <strong>two-handed axes</strong>.</li>
-          <li><strong>Special:</strong> a random demon sometimes helps you mid-fight.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h4 style="margin:0 0 6px 0;">Witch <span class="muted">(Fortress)</span></h4>
-        <p>
-          Control caster first, damage caster second. Hexes, toxins, slowdown, and a surprisingly sticky sustain loop.
-        </p>
-        <ul>
-          <li><strong>+100% damage</strong> to offensive Body/Mind/Spirit spells.</li>
-          <li><strong>Special:</strong> slows monsters when casting and regenerates health with any spell.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h4 style="margin:0 0 6px 0;">Alchemist <span class="muted">(Tower)</span></h4>
-        <p>
-          The weirdest (in the best way) of the bunch: a frontline sorcerer-smith with volatile creations.
-          Low HP is intentional — you’re meant to win by playing smart, not by face-tanking.
-        </p>
-        <ul>
-          <li><strong>Special:</strong> enchanted armor heavily reduces incoming damage.</li>
-          <li>Can dual-wield <strong>maces</strong>.</li>
-          <li><strong>B key:</strong> command/summon chemical creations.</li>
-        </ul>
-      </div>
+  <h3>New playable classes</h3>
+  <div class="grid">
+    <div class="card">
+      <h4 style="margin:0 0 6px 0;">Demoniac <span class="muted">(Inferno)</span></h4>
+      <p>
+        A brutal melee bruiser bound to something infernal. The more you’re hurt, the more the demon “wakes up”.
+        It’s the kind of class that turns survival into a damage source.
+      </p>
+      <ul>
+        <li>Can dual-wield <strong>two-handed axes</strong>.</li>
+        <li><strong>Special:</strong> a random demon sometimes helps you mid-fight.</li>
+      </ul>
     </div>
 
-    <h3>Balance &amp; improvements</h3>
-    <ul>
-      <li><strong>Runic Power</strong> (Jarl &amp; Runepriest) updated with the “Thor” effect.</li>
-      <li><strong>Trickster</strong> now faces the target after teleporting; blink cooldown reduced from <strong>25s → 15s</strong>.</li>
-      <li>Added <strong>Ghost Dragon</strong> as a playable character.</li>
-    </ul>
+    <div class="card">
+      <h4 style="margin:0 0 6px 0;">Witch <span class="muted">(Fortress)</span></h4>
+      <p>
+        Control caster first, damage caster second. Hexes, toxins, slowdown, and a surprisingly sticky sustain loop.
+      </p>
+      <ul>
+        <li><strong>+100% damage</strong> to offensive Body/Mind/Spirit spells.</li>
+        <li><strong>Special:</strong> slows monsters when casting and regenerates health with any spell.</li>
+      </ul>
+    </div>
 
-    <h3>Major bug fixes</h3>
-    <ul>
-      <li>
-        Added <strong>DeletePETS()</strong> console command (<span class="k">F1</span>) for rare cases where a pet blocks quests, arenas, or progression.
-      </li>
-    </ul>
-  </section>
+    <div class="card">
+      <h4 style="margin:0 0 6px 0;">Alchemist <span class="muted">(Tower)</span></h4>
+      <p>
+        The weirdest (in the best way) of the bunch: a frontline sorcerer-smith with volatile creations.
+        Low HP is intentional — you’re meant to win by playing smart, not by face-tanking.
+      </p>
+      <ul>
+        <li><strong>Special:</strong> enchanted armor heavily reduces incoming damage.</li>
+        <li>Can dual-wield <strong>maces</strong>.</li>
+        <li><strong>B key:</strong> command/summon chemical creations.</li>
+      </ul>
+    </div>
+  </div>
 
-  <section class="card">
-    <h2 style="margin-top:0;">Update 3.0: Automatic skill autoranking &amp; continent-proof progression</h2>
+  <h3>Balance &amp; improvements</h3>
+  <ul>
+    <li><strong>Runic Power</strong> (Jarl &amp; Runepriest) updated with the “Thor” effect.</li>
+    <li><strong>Trickster</strong> now faces the target after teleporting; blink cooldown reduced from <strong>25s → 15s</strong>.</li>
+    <li>Added <strong>Ghost Dragon</strong> as a playable character.</li>
+  </ul>
 
-    <p>
-      This is the feature that changes everything for long MMMerge runs:
-      you can now play <strong>any class on any continent</strong> without worrying about missing trainers.
-      If the continent you’re exploring doesn’t have the trainer you need, the skill will
-      <strong>autorank automatically as you level</strong>.
-    </p>
+  <h3>Major bug fixes</h3>
+  <ul>
+    <li>
+      Added <strong>DeletePETS()</strong> console command (<span class="k">F1</span>) for rare cases where a pet blocks quests, arenas, or progression.
+    </li>
+  </ul>
+</section>
 
-    <p class="note">
-      <strong>Example:</strong>
-      A Monk will automatically autorank <strong>Dodge</strong> and <strong>Unarmed</strong> while playing on Jadame or Enroth —
-      but not on Antagarich, where the proper trainers already exist.
-    </p>
+<section class="card">
+  <h2 style="margin-top:0;">Update 3.0: Automatic skill autoranking &amp; continent-proof progression</h2>
 
-    <h3>Other big changes</h3>
-    <ul>
-      <li>Navigator summoning pool rebalanced for better consistency and control.</li>
-      <li>Trolls can now dual-wield <strong>two maces</strong>.</li>
-      <li>Minotaurs can now dual-wield <strong>two axes</strong>.</li>
-      <li>Multiple skill descriptions clarified/fixed.</li>
-      <li>Demoniac push distance reduced in dungeons to prevent monsters getting stuck in walls.</li>
-      <li>Beastmaster now has <strong>GM Identify Monster</strong> and <strong>GM Disarm Trap</strong>.</li>
-      <li>Bone Guard now has <strong>GM Disarm Trap</strong> (thematic mirror to Vindicator).</li>
-    </ul>
+  <p>
+    This is the feature that changes everything for long MMMerge runs:
+    you can now play <strong>any class on any continent</strong> without worrying about missing trainers.
+    If the continent you’re exploring doesn’t have the trainer you need, the skill will
+    <strong>autorank automatically as you level</strong>.
+  </p>
 
-    <figure style="margin: 16px 0 0 0;">
-      <img class="img" src="https://heroesofthenexus.com/assets/images/Skills_list_by_Karol.png" alt="Advanced Classes Mod — Skill list image by Karol" loading="lazy" />
-      <figcaption class="muted" style="margin-top:8px;">
-        Skills list by Karol — big thanks.
-      </figcaption>
-    </figure>
-  </section>
+  <p class="note">
+    <strong>Example:</strong>
+    A Monk will automatically autorank <strong>Dodge</strong> and <strong>Unarmed</strong> while playing on Jadame or Enroth —
+    but not on Antagarich, where the proper trainers already exist.
+  </p>
 
-  <section class="card">
-    <h2 style="margin-top:0;">Promotions across Enroth, Antagarich &amp; Jadame</h2>
-    <p class="muted">
-      Here’s the practical mapping of promotions across the three continents in MMMerge.
-      (For classes native to Jadame, you usually need the second promotion from other continents to finalize the chain.)
-    </p>
+  <h3>Other big changes</h3>
+  <ul>
+    <li>Navigator summoning pool rebalanced for better consistency and control.</li>
+    <li>Trolls can now dual-wield <strong>two maces</strong>.</li>
+    <li>Minotaurs can now dual-wield <strong>two axes</strong>.</li>
+    <li>Multiple skill descriptions clarified/fixed.</li>
+    <li>Demoniac push distance reduced in dungeons to prevent monsters getting stuck in walls.</li>
+    <li>Beastmaster now has <strong>GM Identify Monster</strong> and <strong>GM Disarm Trap</strong>.</li>
+    <li>Bone Guard now has <strong>GM Disarm Trap</strong> (thematic mirror to Vindicator).</li>
+  </ul>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Class</th>
-          <th>Enroth (MM6)</th>
-          <th>Antagarich (MM7)</th>
-          <th>Jadame (MM8)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Archer</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
-        <tr><td>Cleric</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
-        <tr><td>Dark Elf</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
-        <tr><td>Dragon</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
-        <tr><td>Druid</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
-        <tr><td>Knight</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>Minotaur</td><td>Paladin</td><td>Paladin</td><td>Minotaur</td></tr>
-        <tr><td>Monk</td><td>Cleric</td><td>Monk</td><td>Cleric</td></tr>
-        <tr><td>Paladin</td><td>Paladin</td><td>Paladin</td><td>Minotaur</td></tr>
-        <tr><td>Ranger</td><td>Archer</td><td>Ranger</td><td>Dark Elf</td></tr>
-        <tr><td>Thief</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
-        <tr><td>Troll</td><td>Knight</td><td>Knight</td><td>Troll</td></tr>
-        <tr><td>Vampire</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
-        <tr><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td><td>Necromancer</td></tr>
-        <tr><td>Necromancer</td><td>Sorcerer</td><td>Sorcerer</td><td>Necromancer</td></tr>
-        <tr><td>Peasant</td><td>—</td><td>—</td><td>—</td></tr>
+  <figure style="margin: 16px 0 0 0;">
+    <img class="img" src="https://heroesofthenexus.com/assets/images/Skills_list_by_Karol.png" alt="Advanced Classes Mod — Skill list image by Karol" loading="lazy" />
+    <figcaption class="muted" style="margin-top:8px;">
+      Skills list by Karol — big thanks.
+    </figcaption>
+  </figure>
+</section>
 
-        <tr><th colspan="4">Advanced / HOTN Classes</th></tr>
+<section class="card">
+  <h2 style="margin-top:0;">Promotions across Enroth, Antagarich &amp; Jadame</h2>
+  <p class="muted">
+    Here’s the practical mapping of promotions across the three continents in MMMerge.
+    (For classes native to Jadame, you usually need the second promotion from other continents to finalize the chain.)
+  </p>
 
-        <tr><td>Vindicator</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
-        <tr><td>Bone Guard</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>Shaman</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
-        <tr><td>Elementalist</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
-        <tr><td>Beastmaster</td><td>Archer</td><td>Ranger</td><td>Dark Elf</td></tr>
-        <tr><td>Voodoo Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
-        <tr><td>Demonologist</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
-        <tr><td>Diplomat</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
-        <tr><td>Barbarian</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>Mercenary</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>RunePriest</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
-        <tr><td>FreeMage</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
-        <tr><td>Jarl</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>Corsair</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>Trickster</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
-        <tr><td>TrogMaster</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>BattleMage</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
-        <tr><td>Navigator</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
-        <tr><td>Alchemist</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>Demoniac</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
-        <tr><td>Witch</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
-        <tr><td>Mystic</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
-        <tr><td>Bard</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
-      </tbody>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Enroth (MM6)</th>
+        <th>Antagarich (MM7)</th>
+        <th>Jadame (MM8)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Archer</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
+      <tr><td>Cleric</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+      <tr><td>Dark Elf</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
+      <tr><td>Dragon</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+      <tr><td>Druid</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+      <tr><td>Knight</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>Minotaur</td><td>Paladin</td><td>Paladin</td><td>Minotaur</td></tr>
+      <tr><td>Monk</td><td>Cleric</td><td>Monk</td><td>Cleric</td></tr>
+      <tr><td>Paladin</td><td>Paladin</td><td>Paladin</td><td>Minotaur</td></tr>
+      <tr><td>Ranger</td><td>Archer</td><td>Ranger</td><td>Dark Elf</td></tr>
+      <tr><td>Thief</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
+      <tr><td>Troll</td><td>Knight</td><td>Knight</td><td>Troll</td></tr>
+      <tr><td>Vampire</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
+      <tr><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td><td>Necromancer</td></tr>
+      <tr><td>Necromancer</td><td>Sorcerer</td><td>Sorcerer</td><td>Necromancer</td></tr>
+      <tr><td>Peasant</td><td>—</td><td>—</td><td>—</td></tr>
 
-    <p class="muted" style="margin-top:10px;">
-      <em>*For classes native to Jadame, you must complete the second promotion from other continents in order to be promoted.</em>
-    </p>
-  </section>
+      <tr><th colspan="4">Advanced / HOTN Classes</th></tr>
 
-  <section class="card">
-    <h2 style="margin-top:0;">FAQ (player answers)</h2>
+      <tr><td>Vindicator</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+      <tr><td>Bone Guard</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>Shaman</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+      <tr><td>Elementalist</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+      <tr><td>Beastmaster</td><td>Archer</td><td>Ranger</td><td>Dark Elf</td></tr>
+      <tr><td>Voodoo Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+      <tr><td>Demonologist</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+      <tr><td>Diplomat</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+      <tr><td>Barbarian</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>Mercenary</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>RunePriest</td><td>Cleric</td><td>Cleric</td><td>Cleric</td></tr>
+      <tr><td>FreeMage</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+      <tr><td>Jarl</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>Corsair</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>Trickster</td><td>Archer</td><td>Thief</td><td>Vampire</td></tr>
+      <tr><td>TrogMaster</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>BattleMage</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+      <tr><td>Navigator</td><td>Sorcerer</td><td>Sorcerer</td><td>Sorcerer</td></tr>
+      <tr><td>Alchemist</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>Demoniac</td><td>Knight</td><td>Knight</td><td>Knight</td></tr>
+      <tr><td>Witch</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+      <tr><td>Mystic</td><td>Druid</td><td>Druid</td><td>Dragon</td></tr>
+      <tr><td>Bard</td><td>Archer</td><td>Archer</td><td>Dark Elf</td></tr>
+    </tbody>
+  </table>
 
-    <h3>Can I change the hotkeys for special skills?</h3>
-    <p>
-      Yes. Go to <span class="k">Scripts &gt; General</span>, open <span class="k">zzz_HOTN-initialize</span>,
-      and modify the key values (you must enter a number).
-    </p>
+  <p class="muted" style="margin-top:10px;">
+    <em>*For classes native to Jadame, you must complete the second promotion from other continents in order to be promoted.</em>
+  </p>
+</section>
 
-    <h3>Is it compatible with multiplayer?</h3>
-    <p>
-      Yes — multiplayer is fully playable. One detail that can surprise people:
-      summons remain alive if their owner dies. It’s intentional and helps avoid rare but nasty engine issues
-      when entities get cleaned up on death. In practice: it keeps the run stable for everyone.
-    </p>
+<section class="card">
+  <h2 style="margin-top:0;">FAQ (player answers)</h2>
 
-    <h3>Is it compatible with MAW?</h3>
-    <p>
-      No. Too many errors happen in-game when combining them, so it’s not recommended.
-    </p>
+  <h3>Can I change the hotkeys for special skills?</h3>
+  <p>
+    Yes. Go to <span class="k">Scripts &gt; General</span>, open <span class="k">zzz_HOTN-initialize</span>,
+    and modify the key values (you must enter a number).
+  </p>
 
-    <h3>Do you plan to make more mods?</h3>
-    <p>
-      Yes. The original plan was a larger project called <strong>Heroes of the Nexus</strong>.
-      That full version is planned for a future release, so this module was published as a standalone,
-      lightweight pack that stays easy to integrate into the base MMMerge setup.
-    </p>
+  <h3>Is it compatible with multiplayer?</h3>
+  <p>
+    Yes — multiplayer is fully playable. One detail that can surprise people:
+    summons remain alive if their owner dies. It’s intentional and helps avoid rare but nasty engine issues
+    when entities get cleaned up on death. In practice: it keeps the run stable for everyone.
+  </p>
 
-    <h3>Why is Dodge different? Is it stronger?</h3>
-    <p>
-      Dodge was adjusted so it can avoid all attacks regardless of skill level — with a low chance at low ranks
-      (around 5%), scaling up to about 25% at 20 skill points.
-      The change exists because the vanilla behavior is bugged, and several new classes rely heavily on Dodge.
-    </p>
-  </section>
+  <h3>Is it compatible with MAW?</h3>
+  <p>
+    No. Too many errors happen in-game when combining them, so it’s not recommended.
+  </p>
 
-  <section class="card">
-    <h2 style="margin-top:0;">Credits &amp; community</h2>
-    <p>
-      Big thanks to <strong>Karol</strong>, <strong>Mortis</strong>, and <strong>Gryz.Malhay</strong> for bug reports and playtesting —
-      that feedback is exactly what turned this into a clean, playable Advanced Classes release.
-      Also thanks to <strong>Maestro</strong>, <strong>yuji sakai</strong>, and <strong>Malekith</strong>.
-    </p>
+  <h3>Do you plan to make more mods?</h3>
+  <p>
+    Yes. The original plan was a larger project called <strong>Heroes of the Nexus</strong>.
+    That full version is planned for a future release, so this module was published as a standalone,
+    lightweight pack that stays easy to integrate into the base MMMerge setup.
+  </p>
 
-    <p>
-      More info for the next release on
-      <a href="https://heroesofthenexus.com" target="_blank" rel="noopener">heroesofthenexus.com</a>.
-      Join the Discord:
-      <a href="https://discord.gg/hcD4b9yXdj" target="_blank" rel="noopener">discord.gg/hcD4b9yXdj</a>.
-    </p>
-  </section>
+  <h3>Why is Dodge different? Is it stronger?</h3>
+  <p>
+    Dodge was adjusted so it can avoid all attacks regardless of skill level — with a low chance at low ranks
+    (around 5%), scaling up to about 25% at 20 skill points.
+    The change exists because the vanilla behavior is bugged, and several new classes rely heavily on Dodge.
+  </p>
+</section>
+
+<section class="card">
+  <h2 style="margin-top:0;">Credits &amp; community</h2>
+  <p>
+    Big thanks to <strong>Karol</strong>, <strong>Mortis</strong>, and <strong>Gryz.Malhay</strong> for bug reports and playtesting —
+    that feedback is exactly what turned this into a clean, playable Advanced Classes release.
+    Also thanks to <strong>Maestro</strong>, <strong>yuji sakai</strong>, and <strong>Malekith</strong>.
+  </p>
+
+  <p>
+    More info for the next release on
+    <a href="https://heroesofthenexus.com" target="_blank" rel="noopener">heroesofthenexus.com</a>.
+    Join the Discord:
+    <a href="https://discord.gg/hcD4b9yXdj" target="_blank" rel="noopener">discord.gg/hcD4b9yXdj</a>.
+  </p>
+</section>
 </main>
 
 <footer class="muted">
