@@ -1,9 +1,4 @@
 <header>
-  <span class="tag">Doomfall</span>
-  <span class="tag">MMMerge</span>
-  <span class="tag">Modular Difficulty</span>
-  <span class="tag">Bosses + Density</span>
-  <span class="tag">Multiplayer-ready</span>
 
   <h1>Doomfall for MMMerge (Might and Magic Merge)</h1>
 
@@ -12,25 +7,6 @@
     It doesn’t just inflate stats — it gives you three clean sliders (<strong>Difficulty</strong>, <strong>Density</strong>, <strong>Bosses</strong>)
     so you can keep the game close to vanilla… or crank it into full endgame chaos, map-faithful and stable.
   </p>
-
-  <div class="card">
-    <h2 style="margin-top:0;">Video showcase</h2>
-    <p class="muted">Here’s the Doomfall presentation video:</p>
-
-    <div style="position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid #21314b;background:#0b0d10;">
-      <iframe
-        src="https://www.youtube.com/embed/nPMMGFCjjEQ"
-        title="Doomfall for MMMerge — Showcase"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
-
-    <p class="muted" style="margin-top:10px;">
-      Direct link:
-      <a href="https://youtu.be/nPMMGFCjjEQ?si=hwXd4aHbgcnSSvyX" target="_blank" rel="noopener">youtu.be/nPMMGFCjjEQ</a>
-    </p>
-  </div>
 
   <div class="note">
     <p style="margin:0;">
