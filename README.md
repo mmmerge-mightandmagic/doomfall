@@ -107,7 +107,7 @@
     </div>
 
     <div class="card">
-      <h4 style="margin:0 0 6px 0;">2) Density</h4>
+      <h4>2) Density</h4>
       <p>
         Density is all about <strong>how many monsters</strong> populate the world — not how strong they are.
         Vanilla density keeps the “classic MMMerge feel”. Higher density turns maps into real battlefields.
@@ -122,7 +122,7 @@
     </div>
 
     <div class="card">
-      <h4 style="margin:0 0 6px 0;">3) Boss</h4>
+      <h4>3) Boss</h4>
       <p>
         This setting controls the appearance of <strong>additional unique bosses</strong>.
         You can keep Difficulty and Density at pure vanilla and enable only Bosses — and suddenly
